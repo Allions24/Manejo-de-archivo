@@ -2,7 +2,7 @@
 #include <stdlib.h> 
 #include <time.h> 
 void main(void) 
-{     
+{    
     int i, j, n, posAnterior = 0, numeroActual = 0;     
     srand(time(NULL));     
     printf("Número de elementos a ordenar\n");     
