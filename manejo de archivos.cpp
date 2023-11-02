@@ -1,7 +1,7 @@
 #include <stdio.h> 
 #include <stdlib.h> 
 #include <time.h> 
-void main(void) 
+int main(void) 
 {    
     int i, j, n, posAnterior = 0, numeroActual = 0;     
     srand(time(NULL));     
@@ -32,7 +32,7 @@ void main(void)
             
         }         
         lista[posAnterior + 1] = numeroActual;         
-        // Actualizar el elemento más pequeño y más grande         
+        // elemento más pequeño y más grande         
         if (numeroActual < elementoMasPequeno) 
         {             
             elementoMasPequeno = numeroActual;         
@@ -43,9 +43,9 @@ void main(void)
             elementoMasGrande = numeroActual;         
             
         }         
-        // Calcular la suma para calcular la media         
+        // suma para la media         
         suma += numeroActual;         
-        // Calcular la moda         
+        // Moda         
         int frecuencia = 1;         
         for (j = i + 1; j < n; j++) 
         {             
@@ -64,9 +64,9 @@ void main(void)
         }     
         
     }     
-    // Calcular la media     
+    // Media     
     float media = (float)suma / n;     
-    // Calcular la mediana     
+    // Mediana     
     float mediana;     
     if (n % 2 == 0) 
     {         
@@ -90,7 +90,7 @@ void main(void)
     printf("Media: %.2f\n", media);     
     printf("Mediana: %.2f\n", mediana);     
     printf("Moda: %d\n", moda);     
-    // Crear un histograma     
+    // Histograma     
     printf("Histograma:\n");     
     for (i = elementoMasPequeno; i <= elementoMasGrande; i++) 
     {         
