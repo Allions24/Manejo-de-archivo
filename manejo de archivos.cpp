@@ -46,7 +46,7 @@ int main(void)
         // suma para la media         
         suma += numeroActual;         
         // Moda         
-        int frecuencia = 0;         
+        int frecuencia = 1;         
         for (j = i + 1; j < n; j++) 
         {             
             if (lista[j] == numeroActual) 
